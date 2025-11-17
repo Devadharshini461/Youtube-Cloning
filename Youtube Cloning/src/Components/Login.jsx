@@ -28,12 +28,16 @@ function Login() {
   return (
     <div className="login-container">
       <div className="login-box">
-      
+      <div className='logo' style={{marginBottom:"10px"}}>
+          <button className='logobutton1'style={{marginLeft:"65px"}}><i className="fa-brands fa-youtube" style={{ color: "#ff0505" }}></i></button>
+          <span style={{fontSize:"28px"}}><b>Youtube</b></span>
+          <span><sup>IN</sup></span>
+      </div>
       <label>Email:</label>
       <input id='email' value={email1} onChange={emailentry} type='email' />
       <label>Password:</label>
       <input id='pass1' value={pass1} onChange={value1} type='password' />
-      <button onClick={move}>Log IN</button>
+      <button className='movebutton' onClick={move}>Log IN</button>
     </div>
     </div>
   )

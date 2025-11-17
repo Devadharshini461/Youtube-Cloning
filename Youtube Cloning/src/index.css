@@ -81,6 +81,11 @@ body {
   background-color: #ffffff;
 }
 
+.logobutton1{
+  background-color: white;
+  border :none;
+}
+
 /* .search button:hover {
   background-color: #e6e6e6;
 } */
@@ -186,9 +191,9 @@ body {
   box-shadow: 0 0 4px #ff543e;
 }
 
-.Signin-container button {
+.Signin-container .accbutton {
   margin-top: 22px;
-  background-color: rgba(255, 0, 0, 0.836);
+  background-color: #ff0505;
   color: white;
   border: none;
   padding: 10px;
@@ -378,11 +383,11 @@ body {
 }
 
 .login-box input:focus {
-  border-color: #d40606; 
+  border-color: #ff0505; 
 }
 
-.login-box button {
-  background: #d40606; 
+.login-box .movebutton {
+  background: #ff0505; 
   border: none;
   color: white;
   padding: 12px;

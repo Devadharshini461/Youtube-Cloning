@@ -27,8 +27,8 @@ function Navbar({onSearch}) {
     <>
       <div className='navbar'>
         <div className='logo'>
-          <button onClick={() => { Navigate('/Home') }} className='logobutton'><i class="fa-solid fa-bars" style={{ color: "#000000ff" }}></i></button>
-          <i className="fa-brands fa-youtube" style={{ color: "#ff0505" }}></i>
+          <button className='logobutton'><i class="fa-solid fa-bars" style={{ color: "#000000ff" }}></i></button>
+          <button className='logobutton1' onClick={() => { Navigate('/Home') }} ><i className="fa-brands fa-youtube" style={{ color: "#ff0505" }}></i></button>
           <span><b>Youtube</b></span>
           <span><sup>IN</sup></span>
         </div>
