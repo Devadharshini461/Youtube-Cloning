@@ -3,7 +3,7 @@ import Videocard from './Videocard'
 import { useEffect } from 'react'
 import { useState } from 'react'
 
-function Videolist() {
+function Videolist({searchText}) {
     const video = [
         {
             id: "U5HvuKEjH6g",
@@ -117,6 +117,10 @@ function Videolist() {
     //         )
     //     }
 
+    const filteredVideos = video.filter(v =>
+        v.head.toLowerCase().includes(searchText.toLowerCase())
+    );
+
     const videolist = video.map((vdo) =>
         <Videocard
             id={vdo.id}
@@ -129,7 +133,17 @@ function Videolist() {
     )
     return (
         <div className='videolist-container' >
-            {videolist}
+            {filteredVideos.map(vdo => (
+                <Videocard
+                    key={vdo.id}
+                    id={vdo.id}
+                    head={vdo.head}
+                    views={vdo.views}
+                    img={vdo.img}
+                    channel={vdo.channel}
+                    time={vdo.time}
+                />
+            ))}
         </div>
     )
 }

@@ -30,10 +30,8 @@ function Videopage() {
           >
           </iframe>
 
-          {/* <h2 style={{ marginTop: "10px" }}>Video Playing...</h2> */}
           <hr style={{marginTop:"30px" }}/>
 
-          {/* COMMENT INPUT */}
           <h3 style={{marginTop:"20px" , marginBottom: "15px"}}>Comments</h3>
 
           <div style={{ marginBottom: "15px"}}>
@@ -46,7 +44,6 @@ function Videopage() {
             <button onClick={handlePost} className='postbutton'>Post</button>
           </div>
 
-          {/* ALL COMMENTS SHOWN HERE */}
           <div>
             {allComments.length === 0 && (<p>No comments yet. Be the first to comment!</p>)}
             {allComments.map((c, index) => (
@@ -62,11 +59,8 @@ function Videopage() {
           <h3>Suggested Videos</h3>
           {/* <div style={{ display: "flex", flexDirection: "column" }}> */}
             <Videolist />
-          
         </aside>
 
-
-        {/* RIGHT SIDE — SUGGESTED VIDEOS */}
         {/* <div style={{ flex: 1 }}>
           <h3>Suggested Videos</h3>
           <Videolist />

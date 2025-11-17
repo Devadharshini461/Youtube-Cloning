@@ -1,4 +1,3 @@
-/* Reset and base */
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +10,6 @@ body {
   color: #000;
 }
 
-/* Navbar container */
 .navbar {
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
@@ -25,7 +23,6 @@ body {
   z-index: 10;
 }
 
-/* Left - Logo */
 .logo {
   display: flex;
   align-items: center;
@@ -49,7 +46,6 @@ body {
   margin-left: 2px;
 }
 
-/* Center - Search bar */
 .search {
   display: flex;
   align-items: center;
@@ -105,7 +101,7 @@ body {
  background-color: #ebe6e6;
  margin-right: 10px;
 }
-/* Right - Icons & user */
+
 .sideportion {
   display: flex;
   z-index: 10;
@@ -116,7 +112,7 @@ body {
 }
 .sidebar {
   position: fixed;
-  margin-top: 68px;
+  margin-top: 65.5px;
   left: 0;
   top: 0;
   height: 100vh;
@@ -124,7 +120,7 @@ body {
   background: #fff;
   border-right: 1px solid #ddd;
   padding: 10px;
-  overflow-y: auto;   /* optional: scroll only inside sidebar */
+  overflow-y: auto;   
 }
 
 .sideportion button {
@@ -140,10 +136,6 @@ body {
   font-size: 18px;
 }
 
-/* .sideportion button:hover {
-  color: #555;
-} */
-
 .sideportion p {
   background-color: f1f1f1;
   padding: 6px 10px;
@@ -152,15 +144,6 @@ body {
   color: #000;
 }
 
-
-/* Hover and focus effects */
-/* .search input:focus {
-  border: 1px solid #3ea6ff;
-} */
-
-/* ---------------------- */
-/* Global Defaults */
-/* ---------------------- */
 body {
   margin: 0;
   padding: 0;
@@ -170,9 +153,6 @@ body {
   color: #333;
 }
 
-/* ---------------------- */
-/* Signin Page Styling */
-/* ---------------------- */
 .Signin-container {
   width: 360px;
   margin: 80px auto;
@@ -218,8 +198,6 @@ body {
   transition: background 0.3s ease;
 }
 
-
-
 @media (max-width: 480px) {
   .Signin-container {
     width: 85%;
@@ -228,9 +206,6 @@ body {
   }
 }
 
-/* ===========================
-   VIDEO LIST (GRID)
-=========================== */
 .videolist-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -241,9 +216,6 @@ body {
   box-sizing: border-box;
 }
 
-/* ===========================
-   VIDEO CARD
-=========================== */
 .video-card {
   width: 100%;
   cursor: pointer;
@@ -261,20 +233,12 @@ body {
   background-color: white;
 }
 
-/* .video-card img:hover {
-  transform: scale(1.02);
-} */
-
-/* ===========================
-   VIDEO INFO SECTION
-=========================== */
 .video-info {
   display: flex;
   margin-top: 10px;
   gap: 12px;
 }
 
-/* Channel profile image */
 .channel-img {
   width: 40px;
   height: 40px;
@@ -282,9 +246,6 @@ body {
   object-fit: cover;
 }
 
-/* ===========================
-   VIDEO DETAILS TEXT
-=========================== */
 .video-details {
   display: flex;
   flex-direction: column;
@@ -366,69 +327,22 @@ body {
 }
 
 .commentinput{
-  width: 92%;
+  width: 90%;
   padding: 10px;
   font-size: 16px;
   border-radius: 8px;
   border: 1px solid #ccc
 }
-/*
-.suggestion-container {
-  margin-left: 100px;
-}
 
-/* Make the videolist vertical on the right side 
-.suggestion-container .videolist-container {
-  /* margin-right: 220px; 
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-/* Style the video card when inside the suggestion container 
-.suggestion-container .video-card {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  gap: 12px;
-  cursor: pointer;
-}
-
-/* Thumbnail size exactly like YouTube Suggestions 
-.suggestion-container .video-card img {
-  width: 160px;
-  height: 90px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-/* Video info text styling *
-.suggestion-container .video-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.suggestion-container .video-title {
-  font-size: 14px;
-  font-weight: 600;
-  margin: 0;
-}
-
-.suggestion-container .video-meta {
-
-
-  /* Center the login box */
 .login-container {
   height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f9f9f9; /* YouTube light gray */
+  background: #f9f9f9; 
 }
 
-/* White card (YouTube style) */
 .login-box {
   width: 350px;
   background: white;
@@ -440,7 +354,6 @@ body {
   gap: 18px;
 }
 
-/* Title */
 .login-box h2 {
   margin: 0;
   text-align: center;
@@ -449,14 +362,12 @@ body {
   color: #202020;
 }
 
-/* Label */
 .login-box label {
   font-weight: 500;
   font-size: 14px;
   color: #333;
 }
 
-/* Input boxes */
 .login-box input {
   padding: 10px;
   border: 1px solid #ccc;
@@ -466,14 +377,12 @@ body {
   transition: 0.2s;
 }
 
-/* Input focus effect */
 .login-box input:focus {
-  border-color: #d40606; /* YouTube blue */
+  border-color: #d40606; 
 }
 
-/* Submit button */
 .login-box button {
-  background: #d40606; /* YouTube primary blue */
+  background: #d40606; 
   border: none;
   color: white;
   padding: 12px;
@@ -481,7 +390,6 @@ body {
   font-size: 16px;
   cursor: pointer;
   margin-top: 10px;
-  transition: 0.2s;
 }
 
 

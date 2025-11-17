@@ -9,7 +9,7 @@ function Login() {
 
   const emailentry=(e) => {
         setemail1(e.target.value)
-      //  console.log("Entered Email:", email1);
+       console.log("Entered Email:", email1);
         localStorage.setItem("email",JSON.stringify(email1));
     }
     function value1(e) {
