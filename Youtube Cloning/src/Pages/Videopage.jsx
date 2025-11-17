@@ -1,9 +1,9 @@
 import React from 'react'
-import Videolist from '../Components/Videolist'
 import { useParams } from 'react-router-dom';
 import { useState } from 'react';
 import Navbar from '../Components/Navbar';
 import './Videopage.css'
+import Videolist1 from '../Components/Videolist1';
 
 function Videopage() {
   const { id } = useParams();
@@ -58,7 +58,7 @@ function Videopage() {
         <aside className="suggestion-container">
           <h3>Suggested Videos</h3>
           {/* <div style={{ display: "flex", flexDirection: "column" }}> */}
-            <Videolist />
+            <Videolist1/>
         </aside>
 
         {/* <div style={{ flex: 1 }}>

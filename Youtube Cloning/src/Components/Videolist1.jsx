@@ -1,9 +1,7 @@
 import React from 'react'
 import Videocard from './Videocard'
-import { useEffect } from 'react'
-import { useState } from 'react'
 
-function Videolist({searchText}) {
+function Videolist1() {
     const video = [
         {
             id: "U5HvuKEjH6g",
@@ -102,41 +100,9 @@ function Videolist({searchText}) {
             time: 7.10
         },
         ]
-    // const [video, setvideo] = useState(null)
 
-    // useEffect(() =>
-    //     fetch('http://localhost:3000/videos')
-    //         .then(Response => { return Response.json })
-    //         .then( data => {setvideo(data)})
-    //         .catch(err), []
-    //     )
-
-    //     if(!video){
-    //         return(
-    //             <></>
-    //         )
-    //     }
-
-    const filteredVideos = video.filter(v =>
-        v.head.toLowerCase().includes(searchText.toLowerCase())
-    );
-
-    // const videolist = video.map((vdo) =>
-    //     <Videocard
-    //         id={vdo.id}
-    //         head={vdo.head}
-    //         views={vdo.views}
-    //         img={vdo.img}
-    //         channel={vdo.channel}
-    //         time={vdo.time}
-    //     />
-    // )
-    
-    return (
-        <div className='videolist-container' >
-            {filteredVideos.map(vdo => (
+         const videolist = video.map((vdo) =>
                 <Videocard
-                    key={vdo.id}
                     id={vdo.id}
                     head={vdo.head}
                     views={vdo.views}
@@ -144,9 +110,12 @@ function Videolist({searchText}) {
                     channel={vdo.channel}
                     time={vdo.time}
                 />
-            ))}
-        </div>
-    )
-}
+            )
+            return(
+                 <div className='videolist-container' >
+                    {videolist}
+                 </div>
+            )
+        }
 
-export default Videolist
+export default Videolist1
