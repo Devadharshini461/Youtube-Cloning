@@ -1,0 +1,487 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9f9f9;
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #000;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Left - Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.logo i {
+  margin-left: 8px;
+  font-size: 26px;
+  color: #ff0000;
+}
+
+.logo span {
+  font-size: 20px;
+  font-weight: 380px;
+  color: #000;
+}
+
+.logo sup {
+  font-size: 10px;
+  margin-left: 2px;
+}
+
+/* Center - Search bar */
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  max-width: 600px;
+  margin: 0 40px;
+  margin-left: 160px;
+}
+
+.search button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:white;
+  color: #000;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search button:first-child {
+  border-radius: 25px 0 0 25px;
+}
+
+.search button:last-child {
+  /* border-radius: 50%; */
+  /* margin-left: 10px; */
+  border-radius: 0 25px 25px 0;
+  width: 45px;
+  height: 44px;
+  background-color: #ffffff;
+}
+
+/* .search button:hover {
+  background-color: #e6e6e6;
+} */
+
+.search input {
+  width: 400px;
+  padding: 6px 10px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  /* border-top: 1px solid #ccc; */
+  /* border-bottom: 1px solid #ccc; */
+}
+
+.sideportion button:first-child {
+ background-color: #ebe6e6;
+ margin-right: 10px;
+}
+/* Right - Icons & user */
+.sideportion {
+  display: flex;
+  z-index: 10;
+  position: sticky;
+  align-items: center;
+  margin-left: 115px;
+  /* gap: 15px; */
+}
+.sidebar {
+  position: fixed;
+  margin-top: 68px;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 240px;
+  background: #fff;
+  border-right: 1px solid #ddd;
+  padding: 10px;
+  overflow-y: auto;   /* optional: scroll only inside sidebar */
+}
+
+.sideportion button {
+  color: #000;
+  
+  padding: 8px 12px;
+  /* border: 1px solid #ccc; */
+  background: transparent;
+  border-radius: 15px;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* .sideportion button:hover {
+  color: #555;
+} */
+
+.sideportion p {
+  background-color: f1f1f1;
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-size: 17.5px;
+  color: #000;
+}
+
+
+/* Hover and focus effects */
+/* .search input:focus {
+  border: 1px solid #3ea6ff;
+} */
+
+/* ---------------------- */
+/* Global Defaults */
+/* ---------------------- */
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Courier New', Courier, monospace; */
+  /* font-family: "Poppins", Arial, sans-serif; */
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* ---------------------- */
+/* Signin Page Styling */
+/* ---------------------- */
+.Signin-container {
+  width: 360px;
+  margin: 80px auto;
+  padding: 35px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.Signin-container label {
+  font-size: 14px;
+  color: #333;
+  margin-top: 12px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.Signin-container input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.Signin-container input:focus {
+  border-color: #ff543e;
+  box-shadow: 0 0 4px #ff543e;
+}
+
+.Signin-container button {
+  margin-top: 22px;
+  background-color: rgba(255, 0, 0, 0.836);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+
+
+@media (max-width: 480px) {
+  .Signin-container {
+    width: 85%;
+    margin: 60px auto;
+    padding: 25px;
+  }
+}
+
+/* ===========================
+   VIDEO LIST (GRID)
+=========================== */
+.videolist-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  padding: 20px;
+  width: 100%;
+  /* margin-left: 240px; */
+  box-sizing: border-box;
+}
+
+/* ===========================
+   VIDEO CARD
+=========================== */
+.video-card {
+  width: 100%;
+  cursor: pointer;
+}
+
+.video-card img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+
+.logobutton{
+  border: none;
+  background-color: white;
+}
+
+/* .video-card img:hover {
+  transform: scale(1.02);
+} */
+
+/* ===========================
+   VIDEO INFO SECTION
+=========================== */
+.video-info {
+  display: flex;
+  margin-top: 10px;
+  gap: 12px;
+}
+
+/* Channel profile image */
+.channel-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ===========================
+   VIDEO DETAILS TEXT
+=========================== */
+.video-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.video-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  color: #000;
+}
+
+.video-meta {
+  font-size: 14px;
+  color: #606060;
+  margin: 2px 0;
+}
+
+.video-card div {
+  font-size: 13px;
+  color: #707070;
+}
+
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  border-right: 1px solid #ddd;
+  padding: 10px;
+  background: #fff;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.item:hover {
+  background: #f2f2f2;
+}
+
+.item img {
+  width: 22px;
+  height: 22px;
+}
+
+.item i {
+  font-size: 22px;
+}
+
+.sidebar h3 {
+  margin-left: 10px;
+  color: #444;
+}
+
+.sidebar hr {
+  margin: 10px 0;
+  border: 0.5px solid #ddd;
+}
+
+.video1{
+  display: flex;
+  padding : 20px;
+  gap: "20px"
+}
+
+.postbutton{
+  margin-Left: 10px;
+  padding: 10px 15px;
+  font-size: 15px;
+  background: black;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer
+}
+
+.commentinput{
+  width: 92%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc
+}
+/*
+.suggestion-container {
+  margin-left: 100px;
+}
+
+/* Make the videolist vertical on the right side 
+.suggestion-container .videolist-container {
+  /* margin-right: 220px; 
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Style the video card when inside the suggestion container 
+.suggestion-container .video-card {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 12px;
+  cursor: pointer;
+}
+
+/* Thumbnail size exactly like YouTube Suggestions 
+.suggestion-container .video-card img {
+  width: 160px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Video info text styling *
+.suggestion-container .video-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.suggestion-container .video-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.suggestion-container .video-meta {
+
+
+  /* Center the login box */
+.login-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9f9; /* YouTube light gray */
+}
+
+/* White card (YouTube style) */
+.login-box {
+  width: 350px;
+  background: white;
+  border-radius: 10px;
+  padding: 30px 25px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Title */
+.login-box h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  color: #202020;
+}
+
+/* Label */
+.login-box label {
+  font-weight: 500;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Input boxes */
+.login-box input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+/* Input focus effect */
+.login-box input:focus {
+  border-color: #d40606; /* YouTube blue */
+}
+
+/* Submit button */
+.login-box button {
+  background: #d40606; /* YouTube primary blue */
+  border: none;
+  color: white;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.2s;
+}
+
+
