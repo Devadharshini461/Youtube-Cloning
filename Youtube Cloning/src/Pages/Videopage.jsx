@@ -58,14 +58,8 @@ function Videopage() {
 
         <aside className="suggestion-container">
           <h3>Suggested Videos</h3>
-          {/* <div style={{ display: "flex", flexDirection: "column" }}> */}
             <Videolist1/>
         </aside>
-
-        {/* <div style={{ flex: 1 }}>
-          <h3>Suggested Videos</h3>
-          <Videolist />
-        </div> */}
 
       </div>
     </>
