@@ -11,7 +11,7 @@ function Videolist({searchText}) {
             channel: 'Thrivefy',
             img: 'Youtube Cloning//src//channels4_profile.jpg',
             views: '1.5M views . 3 Months ago',
-            time: 8.32
+            history:"false"
         },
         {
             id:"okmscYcWIu4",
@@ -19,7 +19,7 @@ function Videolist({searchText}) {
             channel: 'Alternate Brain',
             img: 'Youtube Cloning//src//channels4_profile.jpg',
             views: '81K views . 5 Weeks ago',
-            time: 10.41
+            history:"false" 
         },
         {
             id: "22wpwgpy7fY",
@@ -27,7 +27,7 @@ function Videolist({searchText}) {
             channel: 'Buddhism',
             img: 'Youtube Cloning//src//channels4_profile.jpg',
             views: '2.3M views . 2 Years ago',
-            time: 10.41
+            history:"false"
         },
         {
             id: "Hu4Yvq-g7_Y",
@@ -35,7 +35,7 @@ function Videolist({searchText}) {
             channel: 'TEDx Talks',
             img: 'Youtube Cloning//src//channels4_profile.jpg',
             views: '18M views . 2 Days ago',
-            time: 10.41
+            history:"false" 
         },
         {
             id: "P6FORpg0KVo",
@@ -43,7 +43,7 @@ function Videolist({searchText}) {
             channel: 'TED',
             img: 'Youtube Cloning//src//channels4_profile.jpg',
             views: '12M views . 2 Months ago',
-            time: 12.54
+            history:"false" 
         },
         {
             id: "ZVO8Wt_PCgE",
@@ -51,7 +51,7 @@ function Videolist({searchText}) {
             channel: 'Ideas & Inspiration',
             img: 'Youtube Cloning//src//channels4_profile.jpg',
             views: '16M views . 6 Years ago',
-            time: 13.54
+            history:"false" 
         },
         {
             id: "UhvVxMl3OHg",
@@ -59,7 +59,7 @@ function Videolist({searchText}) {
             channel: `Abhasa - Rehab & Wellness`,
             img: 'Youtube Cloning//src//channels4_profile.jpg',
             views: '498K views . 7 Months ago',
-            time: 7.13
+            history:"false" 
         },
         {
             id: "vxwhgKWTLkM",
@@ -67,7 +67,7 @@ function Videolist({searchText}) {
             channel: `Dr Pal`,
             img: 'Youtube Cloning//src//channels4_profile.jpg',
             views: '1M views . 6 Months ago',
-            time: 7.10
+            history:"false"
         },
         {
             id: "9Vt4x-OydxI",
@@ -75,7 +75,7 @@ function Videolist({searchText}) {
             channel: `Almost Everything`,
             img: 'Youtube Cloning//src//channels4_profile.jpg',
             views: '247K views . 7 Days ago',
-            time: 7.10
+            history:"false"
         },
         {
             id: "k-wYhof-1mY",
@@ -83,7 +83,7 @@ function Videolist({searchText}) {
             channel: `Tharun Kumar`,
             img: 'Youtube Cloning//src//channels4_profile.jpg',
             views: '761K views . 7 Months ago',
-            time: 7.10
+            history:"false"
         },
         {
             id: "8EM2XJ_jRvs",
@@ -91,7 +91,7 @@ function Videolist({searchText}) {
             channel: `Mindset in Minutes`,
             img: 'Youtube Cloning//src//channels4_profile.jpg',
             views: '8.1K views . 4 Months ago',
-            time: 7.10
+            history:"false"
         },
         {
             id: "SuRQKst9b6E",
@@ -99,7 +99,7 @@ function Videolist({searchText}) {
             channel: `LORE BALOS MOTIVATIONS`,
             img: 'Youtube Cloning//src//channels4_profile.jpg',
             views: '639K views  7 months ago',
-            time: 7.10
+            history:"false"
         },
         ]
     // const [video, setvideo] = useState(null)

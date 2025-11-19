@@ -104,7 +104,7 @@ body {
 
 .sideportion button:first-child {
  background-color: #ebe6e6;
- margin-right: 10px;
+ /* margin-right: 5px; */
 }
 
 .sideportion {
@@ -112,7 +112,7 @@ body {
   z-index: 10;
   position: sticky;
   align-items: center;
-  margin-left: 115px;
+  margin-left: 90px;
   /* gap: 15px; */
 }
 .sidebar {

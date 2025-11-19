@@ -27,6 +27,7 @@ function Videopage() {
             src={`https://www.youtube.com/embed/${id}`}
             allowFullScreen
             title="video"
+            style={{borderRadius:"10px"}}
           >
           </iframe>
 

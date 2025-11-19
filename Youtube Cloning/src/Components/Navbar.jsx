@@ -40,8 +40,9 @@ function Navbar({onSearch}) {
           <button><i className="fa-solid fa-microphone"></i></button>
         </div>
         <div className='sideportion'>
-          <button>+Create</button>
+          <button><span style={{fontSize:"20px"}}>+</span><span>Create</span></button>
           <button><i className="fa-solid fa-bell"></i></button>
+          <button><i className="fa-regular fa-circle-user"></i></button>
           <p>{entry}</p>
           <button onClick={out}><i class="fa-solid fa-arrow-right-from-bracket"></i></button>
         </div>

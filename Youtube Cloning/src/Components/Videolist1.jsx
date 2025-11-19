@@ -9,15 +9,15 @@ function Videolist1() {
             channel: 'Thrivefy',
             img: 'Youtube Cloning//src//channels4_profile.jpg',
             views: '1.5M views . 3 Months ago',
-            time: 8.32
+            history: "false"
         },
         {
-            id:"okmscYcWIu4",
+            id: "okmscYcWIu4",
             head: '5 Steps To Improve Your Focus in 7 Days | Master Your Focus in a Week',
             channel: 'Alternate Brain',
             img: 'Youtube Cloning//src//channels4_profile.jpg',
             views: '81K views . 5 Weeks ago',
-            time: 10.41
+            history: "false"
         },
         {
             id: "22wpwgpy7fY",
@@ -25,7 +25,7 @@ function Videolist1() {
             channel: 'Buddhism',
             img: 'Youtube Cloning//src//channels4_profile.jpg',
             views: '2.3M views . 2 Years ago',
-            time: 10.41
+            history: "false"
         },
         {
             id: "Hu4Yvq-g7_Y",
@@ -33,7 +33,7 @@ function Videolist1() {
             channel: 'TEDx Talks',
             img: 'Youtube Cloning//src//channels4_profile.jpg',
             views: '18M views . 2 Days ago',
-            time: 10.41
+            history: "false"
         },
         {
             id: "P6FORpg0KVo",
@@ -41,7 +41,7 @@ function Videolist1() {
             channel: 'TED',
             img: 'Youtube Cloning//src//channels4_profile.jpg',
             views: '12M views . 2 Months ago',
-            time: 12.54
+            history: "false"
         },
         {
             id: "ZVO8Wt_PCgE",
@@ -49,7 +49,7 @@ function Videolist1() {
             channel: 'Ideas & Inspiration',
             img: 'Youtube Cloning//src//channels4_profile.jpg',
             views: '16M views . 6 Years ago',
-            time: 13.54
+            history: "false"
         },
         {
             id: "UhvVxMl3OHg",
@@ -57,7 +57,7 @@ function Videolist1() {
             channel: `Abhasa - Rehab & Wellness`,
             img: 'Youtube Cloning//src//channels4_profile.jpg',
             views: '498K views . 7 Months ago',
-            time: 7.13
+            history: "false"
         },
         {
             id: "vxwhgKWTLkM",
@@ -65,7 +65,7 @@ function Videolist1() {
             channel: `Dr Pal`,
             img: 'Youtube Cloning//src//channels4_profile.jpg',
             views: '1M views . 6 Months ago',
-            time: 7.10
+            history: "false"
         },
         {
             id: "9Vt4x-OydxI",
@@ -73,7 +73,7 @@ function Videolist1() {
             channel: `Almost Everything`,
             img: 'Youtube Cloning//src//channels4_profile.jpg',
             views: '247K views . 7 Days ago',
-            time: 7.10
+            history: "false"
         },
         {
             id: "k-wYhof-1mY",
@@ -81,7 +81,7 @@ function Videolist1() {
             channel: `Tharun Kumar`,
             img: 'Youtube Cloning//src//channels4_profile.jpg',
             views: '761K views . 7 Months ago',
-            time: 7.10
+            history: "false"
         },
         {
             id: "8EM2XJ_jRvs",
@@ -89,7 +89,7 @@ function Videolist1() {
             channel: `Mindset in Minutes`,
             img: 'Youtube Cloning//src//channels4_profile.jpg',
             views: '8.1K views . 4 Months ago',
-            time: 7.10
+            history: "false"
         },
         {
             id: "SuRQKst9b6E",
@@ -97,25 +97,28 @@ function Videolist1() {
             channel: `LORE BALOS MOTIVATIONS`,
             img: 'Youtube Cloning//src//channels4_profile.jpg',
             views: '639K views  7 months ago',
-            time: 7.10
+            history: "false"
         },
-        ]
+    ]
 
-         const videolist = video.map((vdo) =>
-                <Videocard
-                    id={vdo.id}
-                    head={vdo.head}
-                    views={vdo.views}
-                    img={vdo.img}
-                    channel={vdo.channel}
-                    time={vdo.time}
-                />
-            )
-            return(
-                 <div className='videolist-container' >
-                    {videolist}
-                 </div>
-            )
-        }
+    const videolist = video.map((vdo) =>
+        <Videocard
+            id={vdo.id}
+            head={vdo.head}
+            views={vdo.views}
+            img={vdo.img}
+            channel={vdo.channel}
+            time={vdo.time}
+            // history={History}
+        />
+    )
+    return (
+        // <data.Provider value={{ video }}>
+            <div className='videolist-container' >
+                {videolist}
+            </div>
+        // </data.Provider>
+    )
+}
 
 export default Videolist1
